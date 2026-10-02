@@ -1,0 +1,17 @@
+{
+  "name": "mymu-app",
+  "version": "2.0.0",
+  "description": "Modern Music Streaming App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.2",
+    "yt-search": "^2.12.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

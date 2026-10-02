@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mymu</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-blur" id="bgBlur"></div>
+
+<header>
+
+  <div>
+    <h1>Mymu 👾</h1>
+    <p>FREEMAN</p>
+  </div>
+
+  <div class="moods">
+    <button onclick="moodSearch('sad songs')">Sad</button>
+    <button onclick="moodSearch('night drive')">Night</button>
+    <button onclick="moodSearch('phonk')">Phonk</button>
+    <button onclick="moodSearch('anime')">Anime</button>
+  </div>
+
+</header>
+
+<div class="search-box">
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search songs..."
+  >
+
+  <button id="searchBtn">Search</button>
+
+</div>
+
+<div id="queue"></div>
+
+<div id="songs"></div>
+
+<div class="lyrics" id="lyrics">
+  Lyrics will appear here...
+</div>
+
+<div class="player">
+
+  <img id="cover" src="">
+
+  <div class="player-info">
+
+    <h2 id="title">No song playing</h2>
+    <p id="artist">---</p>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+    <canvas id="visualizer"></canvas>
+
+  </div>
+
+  <div class="controls">
+
+    <button id="prevBtn">⏮</button>
+    <button id="playBtn">▶</button>
+    <button id="nextBtn">⏭</button>
+
+  </div>
+
+</div>
+
+<audio id="audio"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
+
